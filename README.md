@@ -1,20 +1,21 @@
-# Portal TERP4024 – GitHub Pages
+# TERP4024 – Portal GitHub Pages (Cetak & PDF Sahaja)
 
-## Terbitkan tanpa Netlify
-1. Pergi ke https://github.com/new dan cipta **public repository** `TERP4024-Penyeliaan-Klinikal` (untuk pelan GitHub Free).
-2. Buka repository → **Add file → Upload files**. Muat naik **index.html, styles.css, app.js, .nojekyll** daripada folder ini. Pastikan `index.html` di root.
-3. **Settings → Pages → Build and deployment → Deploy from a branch → main → /(root) → Save.**
-4. Buka pautan Pages selepas deployment siap.
+Versi ini tidak menggunakan Google Sheets, Google Apps Script atau Netlify. Borang tidak menyimpan jawapan secara automatik.
 
-## Simpan respons ke Google Sheets (pilihan tambahan)
-1. Di https://script.google.com/ cipta projek baharu, salin kandungan fail `Code.gs` daripada pakej backend BERASINGAN (jangan upload `Code.gs` ke repository awam).
-2. Jalankan fungsi `setup`, benarkan akses, dan buka pautan spreadsheet dalam Execution log.
-3. **Deploy → New deployment → Web app → Execute as Me**, tetapkan Who has access berdasarkan keperluan dan dasar organisasi, dan terbitkan.
-4. Dalam laman GitHub Pages, pilih **Panduan & sambungan**, tampalkan URL `/exec` Apps Script pada peranti berkenaan.
-5. Hantar satu rekod ujian. Google membuka tab baharu; hanya status **Berjaya disimpan** mengesahkan penyimpanan. Semak baris baharu dalam Google Sheets.
+## Kemas kini laman GitHub sedia ada
+1. Buka repository `TERP4024-Penyeliaan-Klinikal` → tab **Code**.
+2. Pilih **Add file → Upload files**.
+3. Muat naik **index.html, app.js, styles.css** daripada pakej ini terus ke folder utama (root).
+4. Jika GitHub mengesan nama fail yang sama, benarkan fail digantikan dan klik **Commit changes**. Jika muat naik berulang tidak menggantikan fail, buka fail berkenaan → ikon pensel → tampal kandungan fail baharu → Commit changes.
+5. GitHub Pages menerbitkan versi terkini daripada branch `main` selepas selesai build. Muat semula laman dengan Ctrl+Shift+R.
 
-## Cetak / PDF
-Di borang, pilih Cetak atau Simpan PDF (pilihan Save as PDF dalam dialog pelayar).
+**Pilihan lebih selamat:** gunakan GitHub web editor (`.` dari repository) untuk mengganti ketiga-tiga fail dan commit sekali gus.
 
-## Keselamatan
-GitHub Pages adalah laman awam. Jangan letakkan respons sulit, nama murid atau rahsia dalam repository. URL Apps Script disimpan dalam pelayar masing-masing; setiap peranti perlu memasukkan URL tersebut. Backend Apps Script yang dibuka kepada 'Anyone' boleh menerima POST tanpa autentikasi tersuai dan berpotensi disalahgunakan. Untuk data sensitif, pertimbangkan Google Forms terhad kepada akaun organisasi atau sistem dengan pengesahan pengguna yang sebenar.
+## Fungsi
+- Pra Penyeliaan (10 soalan)
+- Pemerhatian (12 indikator)
+- Cetak A4
+- Simpan PDF melalui dialog cetakan pelayar
+- Panduan penggunaan
+
+**Tiada penghantaran respons atau auto-save.** Pastikan pengguna menyimpan PDF sebelum meninggalkan halaman.
